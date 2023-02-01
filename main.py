@@ -8,8 +8,6 @@ class A(list):
         obj = super().__new__(A)
 
 
-
-
 a = A()
 
 
