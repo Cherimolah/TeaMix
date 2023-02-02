@@ -8,7 +8,7 @@ class A(list):
         obj = super().__new__(A)
 
 
-a = A()
+A()
 
 
 if __name__ == '__main__':
