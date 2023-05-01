@@ -3,12 +3,18 @@
 <head>
     <script src="/assets/scripts/script.js"></script>
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+    <link href="/assets/styles/tiles.css" rel="stylesheet" type="text/css">
+    <title>Чайный микс</title>
+    <meta charset="utf-8">
 </head>
 
 <body>
     <h1>Привет, мир</h1>
     <p id="demo">Привет, мир!</p>
-    <button type="button" onclick="httpGetAsync('/start')">Кликни меня</button>
+    <table id="field" style="width: 495px"></table>>
+    <table id="field1"></table>>
+    <button type="button" onclick="httpGetAsync('/start', print_response)">Кликни меня</button>
+    <button type="button" onclick="httpGetAsync('/check_steps', print_response1)">Check</button>
     <script>
         vkBridge.send("VKWebAppInit", {});
     </script>

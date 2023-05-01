@@ -27,3 +27,5 @@ uvicorn==0.18.3
 uvloop==0.17.0
 watchfiles==0.18.0
 websockets==10.3
+
+Pillow~=9.4.0
